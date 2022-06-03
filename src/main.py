@@ -2,7 +2,7 @@
 
 from folders_structure.create_folders import create_required_folders
 from retrieve.odata import retrieve_raw_data
-from format.csv_to_json import csv_to_writable_json
+from format.csv_to_json import csv_to_json
 
 
 def update_data():
@@ -17,7 +17,7 @@ def update_data():
     # PowerBI - manual export to CSVs
 
     # # ----- step 2 -----
-    # csv_to_writable_json()
+    csv_to_json()
 
     # # ----- step 3 -----
     # manual copy + paste from both jsons to writables data stores
